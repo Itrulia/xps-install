@@ -29,3 +29,10 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 chsh -s $(which zsh)
 sudo printf "\nexec zsh" >> ~/.bash_profile
 sudo printf "\nexec zsh" >> ~/.bashrc
+
+# Franz
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2FAB19E7CCB7F415
+sudo sh -c 'echo "deb http://styrion.at/apt/ ./" >> /etc/apt/sources.list.d/styrion.list'
+sudo apt-get update
+sudo apt install meetfranz
+
