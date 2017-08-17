@@ -49,6 +49,12 @@ chsh -s $(which zsh)
 sudo printf "\nexec zsh" >> ~/.bash_profile
 sudo printf "\nexec zsh" >> ~/.bashrc
 
+## Hyper
+cd ~/Downloads
+wget https://latest.hyper.is/latest/deb
+sudo dpkg -i hyper_*
+cd -
+
 ## Asciinema
 sudo apt-get install asciinema
 
