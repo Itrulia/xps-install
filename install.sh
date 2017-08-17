@@ -54,6 +54,7 @@ cd ~/Downloads
 wget https://latest.hyper.is/latest/deb
 sudo dpkg -i hyper_*
 cd -
+sudo npm install -g hpm-cli
 
 ## Asciinema
 sudo apt-get install asciinema
