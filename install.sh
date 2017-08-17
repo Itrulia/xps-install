@@ -20,6 +20,10 @@ sudo sh -c 'echo "deb http://styrion.at/apt/ ./" >> /etc/apt/sources.list.d/styr
 sudo apt-get update
 sudo apt install meetfranz
 
+# Fira Code
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt install fonts-firacode
 
 # Ubuntu stuff
 
