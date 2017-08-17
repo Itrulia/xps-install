@@ -21,6 +21,12 @@ sudo apt-get update
 sudo apt install meetfranz
 
 
+# Ubuntu stuff
+
+## Unity
+sudo apt-get install unity-tweak-tool
+
+
 # CLI
 
 ## Install vim
