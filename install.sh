@@ -102,6 +102,14 @@ sudo apt-get update
 sudo apt-get install flat-remix-icons
 
 
+# QoL
+
+## Touchpad
+
+cp ./ubuntu_touchpad_settings.sh $HOME/.config/autostart/ubuntu_touchpad_settings.sh
+sudo chmod 777 $HOME/.config/autostart/ubuntu_touchpad_settings.sh
+
+
 
 
 
