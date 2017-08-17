@@ -36,3 +36,14 @@ sudo sh -c 'echo "deb http://styrion.at/apt/ ./" >> /etc/apt/sources.list.d/styr
 sudo apt-get update
 sudo apt install meetfranz
 
+
+# Development
+
+## NodeJS
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get update
+sudo apt-get install -y nodejs
+sudo apt-get install -y build-essential
+
+## Yarn
+sudo npm install -g yarn
