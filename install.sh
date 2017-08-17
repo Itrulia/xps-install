@@ -1,6 +1,6 @@
 # Install correct wifi drivers and locks the version
-sudo echo "# vivid repository for wpasupplicant downgrade" >> /etc/apt/sources.list
-sudo echo "deb http://es.archive.ubuntu.com/ubuntu/ vivid main" >> /etc/apt/sources.list
+sudo printf "\n# vivid repository for wpasupplicant downgrade" >> /etc/apt/sources.list
+sudo printf "\ndeb http://es.archive.ubuntu.com/ubuntu/ vivid main" >> /etc/apt/sources.list
 
 sudo rm /var/lib/apt/lists/* -vfr
 sudo apt-get update
@@ -23,3 +23,9 @@ sudo apt-get install google-chrome-stable
 # Install Curl
 sudo apt install curl
 
+# Install ZSH / oh-my-zsh
+sudo apt install zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+chsh -s $(which zsh)
+sudo printf "\nexec zsh" >> ~/.bash_profile
+sudo printf "\nexec zsh" >> ~/.bashrc
