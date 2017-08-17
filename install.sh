@@ -43,7 +43,13 @@ sudo apt install meetfranz
 sudo apt-get install sshfs
 mkdir ~/devvm
 
-## NodeJS
+## Java8
+sudo apt-get purge openjdk*
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer oracle-java8-set-default
+
+## NodeJS8
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y nodejs
