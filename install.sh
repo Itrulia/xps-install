@@ -91,6 +91,17 @@ sudo apt-get update
 sudo apt-get install code
 
 
+# Theme
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
+wget -q -O - http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install arc-theme
+
+sudo add-apt-repository ppa:noobslab/icons
+sudo apt-get update
+sudo apt-get install flat-remix-icons
+
+
 
 
 
