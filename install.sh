@@ -1,11 +1,15 @@
 # Install correct wifi drivers and locks the version
-sudo sh -c 'echo "deb http://es.archive.ubuntu.com/ubuntu/ vivid main" >> /etc/apt/sources.list.d/vivid.list'
+# sudo sh -c 'echo "deb http://es.archive.ubuntu.com/ubuntu/ vivid main" >> /etc/apt/sources.list.d/vivid.list'
 
-sudo rm /var/lib/apt/lists/* -vfr
-sudo apt-get update
-sudo apt-get install initscripts
-sudo apt-get install wpasupplicant=2.1-0ubuntu7
-sudo apt-mark hold wpasupplicant
+# sudo rm /var/lib/apt/lists/* -vfr
+# sudo apt-get update
+# BY HAND!!!!!: Install initscript from https://launchpad.net/ubuntu/xenial/amd64/initscripts/2.88dsf-59.3ubuntu2
+# sudo apt-get install wpasupplicant=2.1-0ubuntu7
+# sudo apt-mark hold wpasupplicant
+# sudo apt-mark hold initscript
+# Disable random mac address
+# printf "\n[device]\nwifi.scan-rand-mac-address=no" /etc/NetworkManager/NetworkManager.conf
+# sudo service network-manager restart
 
 # Install chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
