@@ -4,6 +4,7 @@ sudo printf "\ndeb http://es.archive.ubuntu.com/ubuntu/ vivid main" >> /etc/apt/
 
 sudo rm /var/lib/apt/lists/* -vfr
 sudo apt-get update
+sudo apt-get install initscripts
 sudo apt-get install wpasupplicant=2.1-0ubuntu7
 sudo apt-mark hold wpasupplicant
 
