@@ -117,6 +117,14 @@ sudo chmod 777 $HOME/.config/autostart/ubuntu_touchpad_settings.sh
 ## Keypass
 sudo apt-get install keepassx
 
+## Font rendering
+
+sudo add-apt-repository ppa:no1wantdthisname/ppa
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install fontconfig-infinality
+sudo bash /etc/fonts/infinality/infctl.sh setstyle
+
 
 
 
