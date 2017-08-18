@@ -126,6 +126,15 @@ sudo apt-get install fontconfig-infinality
 sudo bash /etc/fonts/infinality/infctl.sh setstyle
 
 
+## Virtualbox
+
+sudo apt-get install virtualbox virtualbox-qt virtualbox-dkms 
+
+## Vagrant
+cd ~/Downloads
+wget https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.deb
+sudo dpkg -i vagrant_1.9.7_x86_64.deb
+cd -
 
 
 
