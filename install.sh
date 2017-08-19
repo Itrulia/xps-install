@@ -103,6 +103,7 @@ sudo apt-get install libgtk-3-dev
 sudo apt-get install dh-autoreconf
 ./autogen.sh --prefix=/usr
 sudo make install
+cd -
 
 sudo add-apt-repository ppa:noobslab/icons
 sudo apt-get update
