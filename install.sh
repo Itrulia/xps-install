@@ -97,7 +97,7 @@ sudo apt-get install code
 
 
 # Theme
-cd Downloads
+cd ~/Downloads
 git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
 sudo apt-get install libgtk-3-dev
 sudo apt-get install dh-autoreconf
@@ -105,9 +105,11 @@ sudo apt-get install dh-autoreconf
 sudo make install
 cd -
 
-sudo add-apt-repository ppa:noobslab/icons
-sudo apt-get update
-sudo apt-get install flat-remix-icons
+cd ~/Downloads
+git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
+./autogen.sh --prefix=/usr
+sudo make install
+cd -
 
 
 # QoL
