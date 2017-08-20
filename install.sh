@@ -42,6 +42,7 @@ sudo apt-get install vim
 
 ## Install git
 sudo apt-get install git
+sudo apt-get install git-extras
 
 ## Install Curl
 sudo apt install curl
